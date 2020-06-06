@@ -209,6 +209,10 @@ void AVL::clear() {
         remove(root->key);
 }
 
+AVL::~AVL() {
+    clear();
+}
+
 bool AVL::isEmpty() const {
     return !root;
 }

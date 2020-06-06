@@ -29,6 +29,8 @@ private:
     Node* rebalance(Node*& anode);
 
 public:
+    ~AVL();
+
     Node* add(const int& value, Node*& r = root); // recursive
 
     Node* remove(const int& value, Node*& anode = root);
